@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>작업 아카이브 — My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="subpage works-page">
+  <header class="subpage-header">
+    <a class="wordmark" href="index.html">my little archive<span>✳</span></a>
+    <a class="back-link" href="index.html#about">← ABOUT ME</a>
+  </header>
+  <main class="subpage-main">
+    <div class="subpage-heading">
+      <p class="eyebrow">A FEW THINGS I MADE</p>
+      <h1>작업 아카이브<span class="accent-dot">.</span></h1>
+      <p>글과 웹툰, 일러스트를 모아 두는 공간이에요.<br>이미지를 누르면 크게 볼 수 있어요.</p>
+    </div>
+    <div class="works-grid">
+      <button class="work-card" type="button" data-image="이미지/민하진.jpg" data-title="주인공 전신" data-description="웹툰 [춘하추동]의 주인공이 될 민하진의 전신.">
+        <img src="이미지/민하진 크롭.jpg" alt="캐릭터 디자인"><span class="work-category">Drawing</span><strong>주인공 전신</strong><p>웹툰 [춘하추동]의 주인공이 될 민하진의 전신.</p>
+      </button>
+      <button class="work-card" type="button" data-image="https://placehold.co/1600x1100/d9eafa/354c61?text=WEBTOON" data-title="웹툰 — 작품 제목" data-description="웹툰의 한 장면이나 작품 소개를 적어 주세요.">
+        <img src="https://placehold.co/800x550/d9eafa/354c61?text=WEBTOON" alt="웹툰 작업 샘플"><span class="work-category">WEBTOON</span><strong>웹툰 — 작품 제목</strong><p>작품 설명을 여기에 적어 주세요.</p>
+      </button>
+      <button class="work-card" type="button" data-image="https://placehold.co/1600x1100/e6e9f4/4b4f70?text=ILLUSTRATION" data-title="일러스트 — 작품 제목" data-description="그림에 담은 생각이나 사용한 도구를 소개해 주세요.">
+        <img src="https://placehold.co/800x550/e6e9f4/4b4f70?text=ILLUSTRATION" alt="일러스트 작업 샘플"><span class="work-category">ILLUSTRATION</span><strong>일러스트 — 작품 제목</strong><p>작품 설명을 여기에 적어 주세요.</p>
+      </button>
+      <button class="work-card" type="button" data-image="https://placehold.co/1600x1100/dcecf3/3d5964?text=MORE+WORKS" data-title="작업 제목 04" data-description="추가 작업을 넣고 싶을 때 이 카드를 복사해 사용하세요.">
+        <img src="https://placehold.co/800x550/dcecf3/3d5964?text=MORE+WORKS" alt="추가 작업 샘플"><span class="work-category">EXTRA</span><strong>작업 제목 04</strong><p>작품 설명을 여기에 적어 주세요.</p>
+      </button>
+    </div>
+    <a class="back-home-button" href="index.html#about">← 자기소개로 돌아가기</a>
+  </main>
+
+  <dialog class="modal image-modal" aria-label="이미지 크게 보기">
+    <button class="icon-button image-close" type="button" data-close aria-label="닫기">×</button>
+    <img class="large-image" src="" alt="">
+    <div class="large-image-caption"><strong class="large-image-title"></strong><p class="large-image-description"></p></div>
+  </dialog>
+</body>
+</html>

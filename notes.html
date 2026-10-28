@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>메모장 — My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="subpage notes-page">
+  <header class="subpage-header">
+    <a class="wordmark" href="index.html">my little archive<span>✳</span></a>
+    <a class="back-link" href="index.html#about">← ABOUT ME</a>
+  </header>
+  <main class="subpage-main notes-main">
+    <div class="subpage-heading">
+      <p class="eyebrow">NOTES TO MYSELF</p>
+      <h1>메모장<span class="accent-dot">.</span></h1>
+      <p>생각과 설정, 언젠가 쓰고 싶은 이야기들을 모아 두었어요.<br>메모를 누르면 전문을 읽을 수 있어요.</p>
+    </div>
+    <div class="notes-toolbar"><span class="toolbar-dot"></span><span>내 메모</span><span class="toolbar-count">4 notes</span></div>
+    <div class="notes-grid">
+      <button class="note-card" type="button" data-note-title="언젠가 쓰고 싶은 이야기" data-note-date="2026.10.01" data-note-body="여기에 긴 글을 적어 주세요.\n\n메모 내용이 길어져도 상세 창 안에서 스크롤할 수 있습니다. 캐릭터 설정, 짧은 에세이, 웹툰 아이디어, 아직 정리되지 않은 생각 등을 자유롭게 기록해 보세요.\n\n문단을 나누고 싶다면 줄을 한 번 더 띄우면 됩니다.">
+        <span class="note-card-icon">☰</span><span class="note-date">2026.10.01</span><strong>언젠가 쓰고 싶은 이야기</strong><p>문득 떠오른 이야기의 첫 문장...</p><span class="note-tag">IDEA</span>
+      </button>
+      <button class="note-card" type="button" data-note-title="캐릭터 메모" data-note-date="2026.09.18" data-note-body="캐릭터의 성격, 말투, 과거, 관계성을 기록하는 공간입니다.\n\n이곳에 설정을 추가하고 이야기가 발전할 때마다 업데이트해 보세요.">
+        <span class="note-card-icon">✎</span><span class="note-date">2026.09.18</span><strong>캐릭터 메모</strong><p>이 인물은 왜 이런 선택을 할까?</p><span class="note-tag">CHARACTER</span>
+      </button>
+      <button class="note-card" type="button" data-note-title="웹툰 아이디어" data-note-date="2026.08.27" data-note-body="장면이나 연출 아이디어를 적어 주세요.\n\n- 첫 장면의 분위기\n- 반복해서 등장하는 상징\n- 독자에게 남기고 싶은 감정\n\n생각을 완성된 형태로 만들기 전의 실험 노트로 사용해도 좋아요.">
+        <span class="note-card-icon">▤</span><span class="note-date">2026.08.27</span><strong>웹툰 아이디어</strong><p>장면과 연출을 위한 메모...</p><span class="note-tag">WEBTOON</span>
+      </button>
+      <button class="note-card" type="button" data-note-title="좋아하는 문장" data-note-date="2026.08.03" data-note-body="마음에 남은 문장이나 표현, 나중에 작업에 활용하고 싶은 단어를 모아 두는 공간입니다.\n\n이곳에 인용문을 넣을 경우 출처도 함께 적어 주세요.">
+        <span class="note-card-icon">♡</span><span class="note-date">2026.08.03</span><strong>좋아하는 문장</strong><p>잊고 싶지 않은 표현을 모으기.</p><span class="note-tag">QUOTES</span>
+      </button>
+    </div>
+    <a class="back-home-button" href="index.html#about">← 자기소개로 돌아가기</a>
+  </main>
+
+  <dialog class="modal note-detail-modal" aria-labelledby="note-detail-title">
+    <article class="note-detail">
+      <div class="note-detail-top"><span class="app-label"><span class="app-dot"></span> 메모</span><button class="icon-button" type="button" data-close aria-label="닫기">×</button></div>
+      <p class="note-detail-date"></p>
+      <h2 id="note-detail-title"></h2>
+      <div class="note-detail-body"></div>
+      <div class="note-detail-bottom">내 메모 · 이곳은 나만의 기록 공간입니다.</div>
+    </article>
+  </dialog>
+</body>
+</html>
